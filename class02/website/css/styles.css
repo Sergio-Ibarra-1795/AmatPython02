@@ -1,0 +1,275 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #222;
+}
+
+#wrapper{
+  margin: auto;
+  max-width: 1250px;
+}
+
+header { 
+  height: auto;
+  background-color: #222;
+}
+
+#mini_header {
+  display: none;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding:9px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+#container {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  padding:20px;
+  flex: 1;
+}
+
+nav ul {
+  margin-top: 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  list-style: none;
+  background-color: #222;
+  text-align: center;
+  margin-bottom: 9px;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+nav ul li:hover {
+  background-color: #b8f3de;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+section ul {
+  margin-top: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section ul li {
+  list-style: none;
+  padding:8px;
+  background-color: #222;
+  text-align: center;
+  border-radius: 5px;
+  flex: 1;
+}
+
+section ul li a:hover {
+  color: #fff;
+}
+
+section ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#content {
+  padding: 20px;
+  background-color: #fff;
+  flex: 5;
+}
+
+.info_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.info {
+  background-color: #dddddd;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  width: 46%;
+}
+
+.button {
+  background-color: #b70068; 
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d2d1cd;
+}
+
+.button:hover a {
+  color: #222;
+}
+
+.button2 {
+  background-color: #4e5eae; 
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.button2:hover {
+  background-color: #b70068; 
+}
+
+.scale {
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.scale:hover {
+ transform: scale(1.01);
+ filter: contrast(200%);}
+
+
+.footer_text1 {
+  width: 100%; 
+  text-align: center; 
+  color: #fff; 
+  margin-top: 2.8em; 
+  margin-bottom: 5.2em;
+}
+
+.footer_text1 a {
+  color: #b8f3de;
+}
+
+
+@media (max-width: 769px) {
+  #mini_header {
+    display: block;
+  }
+  #header {
+    display: none;
+  }
+  section {
+    font-size: 18px;
+  }
+  #container {
+    flex-direction: column-reverse;
+  }
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  nav {
+    order: 2;
+    padding-bottom: 0px;
+  }
+  .info_container {
+    flex-direction: column;
+  }
+  .info {
+    flex: 1;
+    width: auto;
+    margin-bottom: 11px;
+  }
+  footer {
+    text-align: center;
+    flex-direction: column;
+  }
+  #main_button {
+    display: none;
+  }
+  #main_logo {
+    display: none;
+  }
+}
+
+
+.icons {
+  flex: 1;
+  font-size: 32px;
+  justify-content: space-around;
+  color: #d2d1cd;
+}
+
+.text_center {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.button {
+  margin: 22px 0px;
+  text-align: center;
+}
+
+.footer_image {
+  margin-bottom: 19px;
+}
+
+#button3 {
+  display: inline-block;
+  background-color: #b8f3de;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button3::after {
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f0aa';
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button3:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+}
+#button3:active {
+  background-color: #555;
+  color: #fff;
+}
+#button3.show {
+  opacity: 1;
+  visibility: visible;
+  color: #fff;
+}
+
