@@ -1,7 +1,7 @@
 header = 'La jornada scraping example'
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'}
 separator = '*' * 50
-my_path = 'C:\Users\Sergio\Documents\SIR_Personal_Dell\Other_courses\PythonAmatDell'
+my_path = R'C:\Users\Sergio\Documents\SIR_Personal_Dell\Other_courses\PythonAmatDell'
 
 
 politics_web = "https://www.jornada.com.mx/category/politica.html"
